@@ -9,7 +9,7 @@ The goal of this project is to build a fully functional calculator app with a us
 
 ---
 
-## Day 02 Progress - Basic Interface and Number Pad Interactions 🖥️
+## Day 02 (18.03)  Progress - Basic Interface and Number Pad Interactions 🖥️
 
 ### Features Added in Day 02:
 1. **Basic Calculator Interface**:
@@ -42,6 +42,40 @@ The goal of this project is to build a fully functional calculator app with a us
 
 ---
 
+## Day 03 Progress (25.03) - Advanced Buttons & Interactions 🔄
+
+### New Features Added:
+**New UI Buttons**:
+   - **AC** (All Clear)
+   - **+/-** (Toggle Sign)
+   - **%** (Percentage)
+   - **.** (Decimal Point)
+
+**Interactions for New Buttons**:
+
+1. **Interactions for AC (All Clear) Button**:
+- On click/tap:
+  - Set text on **Input** to `"0"`.
+  - Set variable **Saved_Number** to `""` (empty string).
+  - Set variable **Flag** to `"Replace"`.
+
+2.  **Interactions for +/- (Toggle Sign) Button**:
+- On click/tap:
+  - Set text on **Input** to `[[-Target.text]]` (negate the current value).
+
+3.  **Interactions for % (Percentage) Button**:
+- On click/tap:
+  - Set text on **Input** to `[[Target.text/100]]` (divide the current value by 100).
+
+4.  **Interactions for . (Decimal Point) Button**:
+  - **Case 01**: If the text on **Input** does **not** contain `.` and **Flag** equals `"Replace"`:
+    - Set text on **Input** to `"0."`.
+    - Set variable **Flag** to `"Join"`.
+  - **Case 02**: If the text on **Input** does **not** contain `.` and **Flag** equals `"Join"`:
+    - Set text on **Input** to `[[Target.text]][[This.text]]` (append `.` to the current value).
+
+---
+
 ## Screenshots 📸
 Below are the screenshots of the current progress:
 
@@ -63,11 +97,12 @@ Below are the screenshots of the current progress:
 ## Weekly Updates 🔄
 This repository will be updated weekly with new features and interactions. Below is the planned roadmap:
 
-### Week 1 (Day 02):
+### Day 02 (18.03):
 - Basic calculator interface.
 - Interactions for number pad (0-9).
 
-### Week 2:
+### Day 03 (25.03) :
+- Day 03: Advanced buttons (AC, +/-, %, .) and their logic.
   
 
 ### Week 3:
