@@ -76,6 +76,59 @@ The goal of this project is to build a fully functional calculator app with a us
 
 ---
 
+## Day 04 Progress (01.04) - Basic Arithmetic Operations ➕➖✖️➗
+
+### New Features Added:
+1. **Operator Buttons**: `+`, `-`, `*`, `/`, and `=` buttons.
+2. **Interaction Logic** for performing arithmetic operations.
+
+---
+
+### Interaction Logic for Operators:
+
+#### ➗ **Division (/) Button**:
+- **Interaction**: On click/tap:
+  - **Case 01**: If `Saved_Number` equals `""` (empty):
+    - Set variable `Saved_Number` to the current text on **Input**.
+    - Mark the **/** button as "Selected/Checked" (`true`).
+    - Set variable `Flag` to `"Replace"`.
+  - **Case 02**: Else (if `Saved_Number` is not empty):
+    - Set text on **Input** to `[[Saved_Number / LVAR1]]` (divide `Saved_Number` by `LVAR1`).
+    - Update `Saved_Number` to the new result.
+    - Mark the **/** button as "Selected/Checked" (`true`).
+    - Set `Flag` to `"Replace"`.
+
+*(Replace `LVAR1` with the current input value stored in Axure RP 9.)*
+
+#### ✖️ **Multiplication (*) Button**:
+- Follows the same logic as **Division**, but uses `[[Saved_Number * LVAR1]]`.
+
+#### ➖ **Subtraction (-) Button**:
+- Follows the same logic as **Division**, but uses `[[Saved_Number - LVAR1]]`.
+
+#### ➕ **Addition (+) Button**:
+- Follows the same logic as **Division**, but uses `[[Saved_Number + LVAR1]]`.
+
+---
+
+### Interaction Logic for Equals (=) Button 🔘:
+- **Interaction**: On click/tap:
+  - **Case 01**: If **+** is selected:
+    - Set text on **Input** to `[[Saved_Number + LVAR1]]`.
+    - Reset `Flag` to `"Replace"`.
+    - Clear `Saved_Number` (`""`).
+  - **Case 02**: If **-** is selected:
+    - Set text on **Input** to `[[Saved_Number - LVAR1]]`.
+    - Reset `Flag` and `Saved_Number`.
+  - **Case 03**: If *** is selected:
+    - Set text on **Input** to `[[Saved_Number * LVAR1]]`.
+    - Reset `Flag` and `Saved_Number`.
+  - **Case 04**: If **/** is selected:
+    - Set text on **Input** to `[[Saved_Number / LVAR1]]`.
+    - Reset `Flag` and `Saved_Number`.
+
+---
+
 ## Screenshots 📸
 Below are the screenshots of the current progress:
 
@@ -105,10 +158,10 @@ This repository will be updated weekly with new features and interactions. Below
 - Day 03: Advanced buttons (AC, +/-, %, .) and their logic.
   
 
-### Week 3:
+### Day 04 (01.04):
+- Day 04: Arithmetic operations (+, -, *, /, =).
 
 
-### Week 4:
 
 
 ---
