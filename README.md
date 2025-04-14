@@ -1,6 +1,6 @@
 # Calculator App Project - Step-by-Step Development 🧮
 
-This repository contains the step-by-step development of a **Calculator App** using **Axure RP 9**. Each week, new features and interactions will be added until the app is fully functional. Below is the progress and details of the current session (**Day 02**).
+This repository contains the step-by-step development of a **Calculator App** using **Axure RP 9**. Each week, new features and interactions will be added until the app is fully functional. 
 
 ---
 
